@@ -42,6 +42,9 @@ const RegistrationForm = () => {
     setIsSubmitting(true);
     
     try {
+        if (formData.phone.startsWith('0')) {
+            formData.phone = '233' + formData.phone.slice(1);
+          }
 
       console.log(JSON.stringify(formData))
       const response = await axios.post(`${url}api/student/create`,JSON.stringify(formData),{
