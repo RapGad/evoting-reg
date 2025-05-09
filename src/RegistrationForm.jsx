@@ -17,10 +17,7 @@ const RegistrationForm = () => {
 
   const validate = () => {
     const newErrors = {};
-    
-    if (!formData.indexNumber.match(/^[A-Za-z0-9]{6,12}$/)) {
-      newErrors.indexNumber = 'Invalid index number (6-12 alphanumeric chars)';
-    }
+
     
     if (formData.name.length < 3) {
       newErrors.name = 'Name must be at least 3 characters';
