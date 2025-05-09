@@ -4,7 +4,7 @@ import './RegistrationForm.css';
 import axios from 'axios';
 
 const RegistrationForm = () => {
-    const url = "http://localhost:5002/"
+    const url = "https://evoting-backend-delta.vercel.app/"
 
   const [formData, setFormData] = useState({
     indexNumber: '',
