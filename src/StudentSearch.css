@@ -1,0 +1,247 @@
+/* StudentSearch.css */
+.student-search-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .search-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+  }
+  
+  .search-card h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .search-card .icon {
+    font-size: 1.3rem;
+  }
+  
+  .search-input-group {
+    display: flex;
+    gap: 0.5rem;
+  }
+  /* Add to StudentSearch.css */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  
+  .contact-info span {
+    font-size: 0.85rem;
+  }
+  
+  .contact-info span:first-child {
+    font-weight: 500;
+  }
+  
+  .otp-button.failed {
+    background: #e74c3c;
+  }
+  
+  .otp-button.failed:hover {
+    background: #c0392b;
+  }
+  
+  .search-input-group input {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  /* Add to StudentSearch.css */
+.otp-action {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  
+  .otp-message {
+    font-size: 0.75rem;
+    padding: 0.2rem 0;
+  }
+  
+  .otp-message.success {
+    color: #2ecc71;
+  }
+  
+  .otp-message.error {
+    color: #e74c3c;
+  }
+  
+  .search-button {
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .search-input-group input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+  }
+  
+  .search-button {
+    padding: 0 1.5rem;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-button:disabled {
+    opacity: 0.7;
+  }
+  
+  .spinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s linear infinite;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .results-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .results-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #f1f2f6;
+  }
+  
+  th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .status-badge {
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .status-badge.eligible {
+    background: rgba(46, 204, 113, 0.1);
+    color: #2ecc71;
+  }
+  
+  .status-badge.pending {
+    background: rgba(241, 196, 15, 0.1);
+    color: #f1c40f;
+  }
+  
+  .otp-button {
+    padding: 0.5rem 1rem;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: all 0.2s ease;
+  }
+  
+  .otp-button:hover {
+    background: #2980b9;
+  }
+  
+  .otp-button:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  .otp-button.sent {
+    background: #2ecc71;
+  }
+  
+  .otp-button.failed {
+    background: #e74c3c;
+  }
+  
+  .small-spinner {
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .student-search-container {
+      padding: 1rem;
+    }
+    
+    .search-card {
+      padding: 1.5rem;
+    }
+    
+    .search-input-group {
+      flex-direction: column;
+    }
+    
+    .search-button {
+      padding: 0.8rem;
+    }
+    
+    th, td {
+      padding: 0.6rem;
+      font-size: 0.9rem;
+    }
+  }
