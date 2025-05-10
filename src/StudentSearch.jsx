@@ -16,10 +16,7 @@ const StudentSearch = () => {
 
   const handleSearch = async (e) => {
     e.preventDefault();
-    if (!indexNumber.match(/^[A-Za-z0-9]{6,12}$/)) {
-      setError('Invalid index number (6-12 alphanumeric characters)');
-      return;
-    }
+
 
     setIsLoading(true);
     setError('');
