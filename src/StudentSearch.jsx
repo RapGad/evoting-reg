@@ -12,7 +12,7 @@ const StudentSearch = () => {
   const [otpStatus, setOtpStatus] = useState({});
   const [otpResponse, setOtpResponse] = useState(null);
 
-  const url = 'https://evoting-backend-delta.vercel.app'
+  const url = 'https://evoting-backend-delta.vercel.app'/* 'http://localhost:5002' */
 
   const handleSearch = async (e) => {
     e.preventDefault();
@@ -20,7 +20,7 @@ const StudentSearch = () => {
 
     setIsLoading(true);
     setError('');
-    setStudentData(null);
+    //setStudentData([]);
     const data = {
         studentId: indexNumber
     }
@@ -137,7 +137,7 @@ const StudentSearch = () => {
                   <td>{studentData.name}</td>
                   <td>
                     <div className="contact-info">
-                      <span style={ studentData.phone.length === 12 ? { color: 'green' } : { color: 'red' }}>{studentData.phone}</span>
+                      <span style={ studentData.phone &&studentData.phone.length === 12 ? { color: 'green' } : { color: 'red' }}>{studentData.phone}</span>
                     </div>
                   </td>
                   <td>
