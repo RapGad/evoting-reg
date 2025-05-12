@@ -12,7 +12,7 @@ const StudentSearch = () => {
   const [otpStatus, setOtpStatus] = useState({});
   const [otpResponse, setOtpResponse] = useState(null);
 
-  const url = 'https://evoting-backend-delta.vercel.app'/* 'http://localhost:5002' */
+  const url = /* 'https://evoting-backend-delta.vercel.app'/ */ 'http://localhost:5002' 
 
   const handleSearch = async (e) => {
     e.preventDefault();
